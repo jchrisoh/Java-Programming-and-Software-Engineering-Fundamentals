@@ -4,7 +4,7 @@ function changeRed(width, height) {
 
     for (var pixel of picture.values()) {
         pixel.setRed(red);
-        if (red < 256) {
+        if (red < 255) {
             red = red + 1;
         }
         else {
