@@ -4,12 +4,13 @@ function changeRed(width, height) {
 
     for (var pixel of picture.values()) {
         pixel.setRed(red);
-        if (red < 255) {
+        pixel.setGreen(0);
+        pixel.setBlue(0);
+        if (pixel.getRed() < 255) {
             red = red + 1;
         }
-        else {
+        if (pixel.getRed() == 255) {
             red = 0;
-            red = red + 1;
         }
     }
 
