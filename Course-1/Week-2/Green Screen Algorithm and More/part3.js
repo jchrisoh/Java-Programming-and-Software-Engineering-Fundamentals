@@ -9,7 +9,7 @@ function addBorder(image, thickness) {
         if (pixel.getX() < thickness || image.getWidth() - pixel.getX() <= thickness) {
             setBlack(pixel);
         }
-        else if (pixel.getY() < thickness || image.getHeight() - pixel.getY() <= thickness) {
+        if (pixel.getY() < thickness || image.getHeight() - pixel.getY() <= thickness) {
             setBlack(pixel);
         }
     }
